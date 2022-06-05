@@ -25,4 +25,11 @@ def generate_random_password():
         print("Invalid. Characters total count is greater than the password length.")
         return
     
+    #initializing pw
+	pw = []
+ 
+    
+    
+generate_random_password()
+    
 
