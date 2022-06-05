@@ -1,1 +1,7 @@
-# secure-password-generator
+# Secure Randomized Password Generator
+
+## About
+  *
+
+## Features
+  *
