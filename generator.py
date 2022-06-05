@@ -28,6 +28,18 @@ def generate_random_password():
     #initializing pw
 	pw = []
  
+    #picking random alphabet letters
+	for i in range(alphabets_count):
+		pw.append(random.choice(alphabets))
+
+	#picking random digits
+	for i in range(digits_count):
+		pw.append(random.choice(digits))
+
+	#picking random special characters
+	for i in range(special_characters_count):
+		pw.append(random.choice(special_characters))
+ 
     
     
 generate_random_password()
