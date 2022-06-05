@@ -10,6 +10,7 @@ characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
 
 def generate_random_password():
+<<<<<<< HEAD
     #length of password from the user
     length = int(input("Enter password length: "))
 
@@ -47,3 +48,6 @@ alphabets_count = int(input("Enter alphabets count in password: "))
 
 
 generate_random_password()
+=======
+    
+>>>>>>> 2fd17c6ba0e5521d77eb2eb56fe5110303e31597
