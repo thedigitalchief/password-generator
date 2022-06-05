@@ -39,7 +39,9 @@ def generate_random_password():
 	#picking random special characters
 	for i in range(special_characters_count):
 		pw.append(random.choice(special_characters))
- 
+  
+    if characters_count < length:
+    		random.shuffle(characters)
     
     
 generate_random_password()
