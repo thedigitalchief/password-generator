@@ -1,5 +1,6 @@
+import itertools as it
 import random
-import string
+import pyperclip 
 
 
 #elements to generate password from
