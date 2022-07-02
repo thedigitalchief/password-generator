@@ -9,9 +9,17 @@ digits = list(string.digits)
 special_characters = list("!@#$%^&*()")
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
+#a more efficient method
+characters = {
+    "Uppercases": ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
+    "Lowercases": ['abcdefghijklmnopqyrstuvwxyz'],
+    "Numbers": ['0123456789'],
+    "Symbols": ['!@#$&*?_-'],
+}
+
 
 def generate_random_password():
-<<<<<<< HEAD
+
     #length of password from the user
     length = int(input("Enter password length: "))
 
@@ -49,6 +57,4 @@ alphabets_count = int(input("Enter alphabets count in password: "))
 
 
 generate_random_password()
-=======
-    
->>>>>>> 2fd17c6ba0e5521d77eb2eb56fe5110303e31597
+
