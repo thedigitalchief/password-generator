@@ -17,6 +17,15 @@ characters = {
     "Symbols": ['!@#$&*?_-'],
 }
 
+while True:
+    try:
+        n = int(input("\tLength of Password: "))
+        break
+    except ValueError:
+        print(bcolors.FAIL + "Entered Value should be integer only")
+        print("Restarting the program...")
+        print(bcolors.OKBLUE + "")
+        pass
 
 def generate_random_password():
 
