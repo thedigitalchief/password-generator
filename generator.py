@@ -32,13 +32,23 @@ while True:
 
 def gen_pass(n):
     print(bcolors.OKGREEN + "Select Character type number from the list: ")
+
     arr = ["Numbers", "Uppercases", "Lowercases", "Symbols"]
    
+    l1 = list(it.combinations(arr, 1))
+    l2 = list(it.combinations(arr, 2))
+    l3 = list(it.combinations(arr, 3))
+    l4 = list(it.combinations(arr, 4))
+    l = l1 + l2 + l3 + l4  # list of all the possible combinations of characters
 
 
     #length of password from the user
     length = int(input("Enter password length: "))
 
+	
+	
+	
+	
 ut("Enter password length: "))
 
 
