@@ -69,6 +69,14 @@ def gen_pass(n):
         all_char.extend(l)
         c =  random.choices(l, k = c_per_pass)
         password_l.extend(c)
+	
+    e_c = random.choices(all_char, k = extra_c)
+
+    password_l.extend(e_c)
+    random.shuffle(password_l)
+    password = "".join(password_l) 
+	
+    print(bcolors.HEADER+ "Your password: ", password)
 		
 		
 	
