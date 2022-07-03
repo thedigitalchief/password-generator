@@ -41,14 +41,16 @@ def gen_pass(n):
     l4 = list(it.combinations(arr, 4))
     l = l1 + l2 + l3 + l4  # list of all the possible combinations of characters
 
-
+	
+    for i in range(len(l)):
+        print("\t",i+1, " --- ", l[i])
+    print(bcolors.OKBLUE + "")
+	
+	
+	
     #length of password from the user
     length = int(input("Enter password length: "))
 
-	
-	
-	
-	
 ut("Enter password length: "))
 
 
