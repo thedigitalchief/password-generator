@@ -9,8 +9,3 @@
 🔑 Get a large list of passwords with minimal effort
 
 
-## About
-  *
-
-## Features
-  *
