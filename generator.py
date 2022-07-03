@@ -53,7 +53,6 @@ def gen_pass(n):
             print(bcolors.HEADER + "Serial number should be from 1 to 15...")
             print(bcolors.OKBLUE + "")        
 		
-		
     # pw generation 
     s_comb_l = [i for i in list(l[c_type - 1])] # selected character combination list
     print(s_comb_l)
@@ -61,7 +60,15 @@ def gen_pass(n):
     extra_c = n - (c_per_pass * len(s_comb_l))
     password_l = []
     all_char = []
-		
+
+
+    for i in range(0, len(s_comb_l)):
+        x = s_comb_l[i]
+        z = characters[x][0]
+        l = [char for char in z]
+        all_char.extend(l)
+        c =  random.choices(l, k = c_per_pass)
+        password_l.extend(c)
 		
 		
 	
