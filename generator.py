@@ -1,5 +1,8 @@
-import string
+
+import itertools as it
 import random
+import pyperclip 
+
 
 
 #characters elements to generate password from
@@ -8,10 +11,32 @@ digits = list(string.digits)
 special_characters = list("!@#$%^&*()")
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
+#a more efficient method
+characters = {
+    "Uppercases": ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
+    "Lowercases": ['abcdefghijklmnopqyrstuvwxyz'],
+    "Numbers": ['0123456789'],
+    "Symbols": ['!@#$&*?_-'],
+}
+
+while True:
+    try:
+        n = int(input("\tLength of Password: "))
+        break
+    except ValueError:
+        print(bcolors.FAIL + "Entered Value should be integer only")
+        print("Restarting the program...")
+        print(bcolors.OKBLUE + "")
+        pass
 
 def generate_random_password():
-	#length of password from the user
-	length = int(input("Enter password length: "))
+
+
+    #length of password from the user
+    length = int(input("Enter password length: "))
+
+ut("Enter password length: "))
+
 
 	#asking for user inputs
 	alphabets_count = int(input("Enter alphabets count in password: "))
@@ -55,3 +80,4 @@ def generate_random_password():
 
 
 generate_random_password()
+
