@@ -54,6 +54,14 @@ def gen_pass(n):
             print(bcolors.OKBLUE + "")        
 		
 		
+    # pw generation 
+    s_comb_l = [i for i in list(l[c_type - 1])] # selected character combination list
+    print(s_comb_l)
+    c_per_pass = n // len(s_comb_l)
+    extra_c = n - (c_per_pass * len(s_comb_l))
+    password_l = []
+    all_char = []
+		
 		
 		
 	
