@@ -4,7 +4,6 @@ import random
 import pyperclip 
 
 
-
 #characters elements to generate password from
 alphabets = list(string.ascii_letters)
 digits = list(string.digits)
@@ -46,7 +45,17 @@ def gen_pass(n):
         print("\t",i+1, " --- ", l[i])
     print(bcolors.OKBLUE + "")
 	
-	
+     while True: #catches for loop
+        c_type = int(input("Type any serial number from the above list of combinations: "))
+        if c_type in range(1, 16):
+            break
+        else:
+            print(bcolors.HEADER + "Serial number should be from 1 to 15...")
+            print(bcolors.OKBLUE + "")        
+		
+		
+		
+		
 	
     #length of password from the user
     length = int(input("Enter password length: "))
