@@ -6,8 +6,8 @@
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white) ![MacOS](https://img.shields.io/badge/MacOS-%23000000.svg?style=flat-square&logo=apple&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) 
 
-🔑 Generate extremely cryptographically secure with just 1 click 
-🔑 256-bit AES, security first encryption
-🔑 Scrapes online data and conducts password audits 
-🔑 Measures the strength of the password encryption
+<br>🔑 Generate extremely cryptographically secure with just 1 click 
+<br>🔑 256-bit AES, security first encryption
+<br>🔑 Scrapes online data and conducts password audits 
+<br>🔑 Measures the strength of the password encryption
 
